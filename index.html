@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CV | Andrei Shved</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -40,16 +42,16 @@
   </div>
   <div class="page__inner">
     <div class="page__content">
-      <header class="page-header">
-        <div class="page-header__inner">
+      <header class="page-header" id="header">
+        <div class="page-header__inner container">
           <h1 class="page-header__title">Curriculum vitae<span class="visually-hidden"> of Andrei Shved</span></h1>
 
           <div class="page-header__photo-wrapper">
-            <img class="page-header__photo" src="./img/my-photo.jpg" width="240" height="240" alt="My photo">
+            <img class="page-header__photo" src="./img/my-photo.jpg" width="280" height="280" alt="My photo">
           </div>
 
-          <ul class="social page-header__social">
-            <li class="social__item  social__item--fb">
+          <ul class="social">
+            <li class="social__item social__item--fb">
               <a class="social__link" href="https://www.facebook.com/svensktutby/" target="_blank"
                 rel="noreferrer noopener">
                 <svg class="social__icon" width="50" height="50" aria-hidden="true" role="presentation">
@@ -58,7 +60,7 @@
                 <span class="social__text visually-hidden">Facebook</span>
               </a>
             </li>
-            <li class="social__item  social__item--tw">
+            <li class="social__item social__item--tw">
               <a class="social__link" href="https://www.twitter.com/svensktutby/" target="_blank"
                 rel="noreferrer noopener">
                 <svg class="social__icon" width="50" height="50" aria-hidden="true" role="presentation">
@@ -67,7 +69,7 @@
                 <span class="social__text visually-hidden">Twitter</span>
               </a>
             </li>
-            <li class="social__item  social__item--gh">
+            <li class="social__item social__item--gh">
               <a class="social__link" href="https://www.github.com/svensktutby/" target="_blank"
                 rel="noreferrer noopener">
                 <svg class="social__icon" width="50" height="50" aria-hidden="true" role="presentation">
@@ -80,7 +82,7 @@
         </div>
       </header>
 
-      <main class="page-main">
+      <main class="page-main container">
         <section class="info">
           <div class="info__title-wrapper">
             <h2 class="info__title visually-hidden">Name and position</h2>
@@ -89,28 +91,28 @@
           </div>
 
           <ul class="contacts">
-            <li class="contacts__item  contacts__item--email">
+            <li class="contacts__item contacts__item--email">
               <a class="contacts__link" href="mailto:svensk.tut.by@gmail.com" target="_blank">
                 <svg class="contacts__icon" width="50" height="50" aria-hidden="true" role="presentation">
                   <use xlink:href="#icon-envelope"></use>
                 </svg>
-                <span class="contacts__text visually-hidden">svensk.tut.by@gmail.com</span>
+                <span class="contacts__text">svensk.tut.by@gmail.com</span>
               </a>
             </li>
-            <li class="contacts__item  contacts__item--phone">
+            <li class="contacts__item contacts__item--phone">
               <a class="contacts__link" href="tel:+375297633515" target="_blank">
                 <svg class="contacts__icon" width="50" height="50" aria-hidden="true" role="presentation">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
-                <span class="contacts__text visually-hidden">+375 (29) 763-35-15</span>
+                <span class="contacts__text">+375 (29) 763-35-15</span>
               </a>
             </li>
-            <li class="contacts__item  contacts__item--home">
+            <li class="contacts__item contacts__item--home">
               <a class="contacts__link" href="https://goo.gl/maps/JeP59nzjAimQD4Lv9" target="_blank">
                 <svg class="contacts__icon" width="50" height="50" aria-hidden="true" role="presentation">
                   <use xlink:href="#icon-home"></use>
                 </svg>
-                <span class="contacts__text visually-hidden">Minsk, Belarus</span>
+                <span class="contacts__text">Minsk, Belarus</span>
               </a>
             </li>
           </ul>
@@ -127,109 +129,113 @@
           <h2 class="code__title">Code example</h2>
           <div class="code__example">
             <pre>
-            <code>
-              const domainName = url => url.replace(/(https?:\/\/)?(www\.)?/, '').split('.')[0];
-            </code>
-            <code>
-              const count = str => (str.match(/[a-z]/ig) || []).reduce((acc, char) => {
-                acc[char] ?
-                acc[char]++ :
-                acc[char] = 1;
+  <code>
+  const domainName = url => url
+    .replace(/(https?:\/\/)?(www\.)?/, '')
+    .split('.')[0];
 
-                return acc;
-              }, {});
-            </code>
+  const count = str => (str.match(/[a-z]/ig) || [])
+    .reduce((acc, char) => {
+      acc[char] ?
+      acc[char]++ :
+      acc[char] = 1;
+
+      return acc;
+    }, {});
+  </code>
           </pre>
           </div>
         </section>
 
-        <section class="skills">
-          <h2 class="skills__title">Skills</h2>
-          <ul class="skills">
-            <li class="skills__item skills__item--html">
-              <span class="skills__name">HTML</span>
-              <span class="skills__progress"></span>
-            </li>
-            <li class="skills__item skills__item--css">
-              <span class="skills__name">CSS</span>
-              <span class="skills__progress"></span>
-            </li>
-            <li class="skills__item skills__item--js">
-              <span class="skills__name">JavaScript</span>
-              <span class="skills__progress"></span>
-            </li>
-            <li class="skills__item skills__item--sass">
-              <span class="skills__name">SASS, LESS</span>
-              <span class="skills__progress"></span>
-            </li>
-            <li class="skills__item skills__item--pug">
-              <span class="skills__name">Pug</span>
-              <span class="skills__progress"></span>
-            </li>
-            <li class="skills__item skills__item--bem">
-              <span class="skills__name">BEM</span>
-              <span class="skills__progress"></span>
-            </li>
-            <li class="skills__item skills__item--ps">
-              <span class="skills__name">Photoshop, Figma</span>
-              <span class="skills__progress"></span>
-            </li>
-            <li class="skills__item skills__item--git">
-              <span class="skills__name">Git</span>
-              <span class="skills__progress"></span>
-            </li>
-          </ul>
-        </section>
+        <div class="page-main__row">
+          <div class="page-main__col">
+            <section class="skills">
+              <h2 class="skills__title">Skills</h2>
+              <ul class="skills">
+                <li class="skills__item skills__item--html">
+                  <span class="skills__name">HTML</span>
+                  <span class="skills__progress"><span class="visually-hidden">90%</span></span>
+                </li>
+                <li class="skills__item skills__item--css">
+                  <span class="skills__name">CSS</span>
+                  <span class="skills__progress"><span class="visually-hidden">90%</span></span>
+                </li>
+                <li class="skills__item skills__item--js">
+                  <span class="skills__name">JavaScript</span>
+                  <span class="skills__progress"><span class="visually-hidden">40%</span></span>
+                </li>
+                <li class="skills__item skills__item--sass">
+                  <span class="skills__name">SASS, LESS</span>
+                  <span class="skills__progress"><span class="visually-hidden">80%</span></span>
+                </li>
+                <li class="skills__item skills__item--pug">
+                  <span class="skills__name">Pug</span>
+                  <span class="skills__progress"><span class="visually-hidden">80%</span></span>
+                </li>
+                <li class="skills__item skills__item--bem">
+                  <span class="skills__name">BEM</span>
+                  <span class="skills__progress"><span class="visually-hidden">70%</span></span>
+                </li>
+                <li class="skills__item skills__item--ps">
+                  <span class="skills__name">Photoshop, Figma</span>
+                  <span class="skills__progress"><span class="visually-hidden">30%</span></span>
+                </li>
+                <li class="skills__item skills__item--git">
+                  <span class="skills__name">Git</span>
+                  <span class="skills__progress"><span class="visually-hidden">40%</span></span>
+                </li>
+              </ul>
+            </section>
+    
+            <section class="language">
+              <h2 class="language__title">Language</h2>
+              <ul class="language">
+                <li class="language__item language__item--en">
+                  <span class="language__name">English</span>
+                  <span class="language__progress"><span class="visually-hidden">40%</span></span>
+                </li>
+                <li class="language__item language__item--ru">
+                  <span class="language__name">Russian</span>
+                  <span class="language__progress"><span class="visually-hidden">100%</span></span>
+                </li>
+                <li class="language__item language__item--be">
+                  <span class="language__name">Belarusian</span>
+                  <span class="language__progress"><span class="visually-hidden">80%</span></span>
+                </li>
+                <li class="language__item language__item--pl">
+                  <span class="language__name">Polish</span>
+                  <span class="language__progress"><span class="visually-hidden">60%</span></span>
+                </li>
+                <li class="language__item language__item--cz">
+                  <span class="language__name">Czech</span>
+                  <span class="language__progress"><span class="visually-hidden">20%</span></span>
+                </li>
+              </ul>
+            </section>
+          </div>
+  
+          <div class="page-main__col">
+            <section class="experience">
+              <h2 class="experience__title">Experience</h2>
+              <p class="experience__text">
+                All Interactive courses from HTML Academy were completed. Also were completed some courses from Udacity, Stepic, SoloLearn, FreeCodeCamp.
+                Some projects made by myself are on my <a class="experience__link" href="https://github.com/svensktutby/">GitHub profile</a>.
+              </p>
+            </section>
+    
+            <section class="education">
+              <h2 class="education__title">Education</h2>
+              <p class="education__text">
+                Higher State College of Communications (Minsk), specialization - Telecommunication systems
+              </p>
+            </section>
 
-        <section class="language">
-          <h2 class="language__title">Language</h2>
-          <ul class="language">
-            <li class="language__item language__item--en">
-              <span class="language__name">English</span>
-              <span class="language__progress"></span>
-            </li>
-            <li class="language__item language__item--ru">
-              <span class="language__name">Russian</span>
-              <span class="language__progress"></span>
-            </li>
-            <li class="language__item language__item--be">
-              <span class="language__name">Belarusian</span>
-              <span class="language__progress"></span>
-            </li>
-            <li class="language__item language__item--pl">
-              <span class="language__name">Polish</span>
-              <span class="language__progress"></span>
-            </li>
-            <li class="language__item language__item--cz">
-              <span class="language__name">Czech</span>
-              <span class="language__progress"></span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="experience">
-          <h2 class="experience__title">Experience</h2>
-          <p class="experience__text">
-            All Interactive courses from HTML Academy were completed. Also were completed some courses from Udacity, Stepic, SoloLearn, FreeCodeCamp.
-            Also some projects made by myself are in my <a class="experience__link" href="https://github.com/svensktutby/">GitHub profile</a>.
-          </p>
-        </section>
-
-        <section class="education">
-          <h2 class="education__title">Education</h2>
-          <p class="education__text">
-            Higher State College of Communications (Minsk), specialization - Telecommunication systems
-          </p>
-        </section>
-      </main>
-    </div>
-
-    <div class="page__footer-wrapper">
-      <footer class="page-footer">
-        <div class="page-footer__inner">
-
+            <div class="back-to-top">
+              <a class="back-to-top__link btn" href="#header">Back to top</a>
+            </div>
+          </div>
         </div>
-      </footer>
+      </main>
     </div>
   </div>
 </body>
