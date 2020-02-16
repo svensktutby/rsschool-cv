@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page no-js" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,13 @@
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
 </head>
 <body>
+  <noscript>You have javascript disabled. Site interactivity will be unavailable.</noscript>
   <div style="display: none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-fb" viewBox="0 0 32 32">
@@ -41,8 +46,8 @@
     </svg>
   </div>
   <div class="page__inner">
-    <div class="page__content">
-      <header class="page-header" id="header">
+    <div class="page__content" id="content">
+      <header class="page-header">
         <div class="page-header__inner container">
           <h1 class="page-header__title">Curriculum vitae<span class="visually-hidden"> of Andrei Shved</span></h1>
 
@@ -154,35 +159,35 @@
               <ul class="skills">
                 <li class="skills__item skills__item--html">
                   <span class="skills__name">HTML</span>
-                  <span class="skills__progress"><span class="visually-hidden">90%</span></span>
+                  <span class="skills__progress"><span>90%</span></span>
                 </li>
                 <li class="skills__item skills__item--css">
                   <span class="skills__name">CSS</span>
-                  <span class="skills__progress"><span class="visually-hidden">90%</span></span>
+                  <span class="skills__progress"><span>90%</span></span>
                 </li>
                 <li class="skills__item skills__item--js">
                   <span class="skills__name">JavaScript</span>
-                  <span class="skills__progress"><span class="visually-hidden">40%</span></span>
+                  <span class="skills__progress"><span>40%</span></span>
                 </li>
                 <li class="skills__item skills__item--sass">
                   <span class="skills__name">SASS, LESS</span>
-                  <span class="skills__progress"><span class="visually-hidden">80%</span></span>
+                  <span class="skills__progress"><span>80%</span></span>
                 </li>
                 <li class="skills__item skills__item--pug">
                   <span class="skills__name">Pug</span>
-                  <span class="skills__progress"><span class="visually-hidden">80%</span></span>
+                  <span class="skills__progress"><span>80%</span></span>
                 </li>
                 <li class="skills__item skills__item--bem">
                   <span class="skills__name">BEM</span>
-                  <span class="skills__progress"><span class="visually-hidden">70%</span></span>
+                  <span class="skills__progress"><span>70%</span></span>
                 </li>
                 <li class="skills__item skills__item--ps">
                   <span class="skills__name">Photoshop, Figma</span>
-                  <span class="skills__progress"><span class="visually-hidden">30%</span></span>
+                  <span class="skills__progress"><span>30%</span></span>
                 </li>
                 <li class="skills__item skills__item--git">
                   <span class="skills__name">Git</span>
-                  <span class="skills__progress"><span class="visually-hidden">40%</span></span>
+                  <span class="skills__progress"><span>40%</span></span>
                 </li>
               </ul>
             </section>
@@ -192,23 +197,23 @@
               <ul class="language">
                 <li class="language__item language__item--en">
                   <span class="language__name">English</span>
-                  <span class="language__progress"><span class="visually-hidden">40%</span></span>
+                  <span class="language__progress"><span>40%</span></span>
                 </li>
                 <li class="language__item language__item--ru">
                   <span class="language__name">Russian</span>
-                  <span class="language__progress"><span class="visually-hidden">100%</span></span>
+                  <span class="language__progress"><span>100%</span></span>
                 </li>
                 <li class="language__item language__item--be">
                   <span class="language__name">Belarusian</span>
-                  <span class="language__progress"><span class="visually-hidden">80%</span></span>
+                  <span class="language__progress"><span>80%</span></span>
                 </li>
                 <li class="language__item language__item--pl">
                   <span class="language__name">Polish</span>
-                  <span class="language__progress"><span class="visually-hidden">60%</span></span>
+                  <span class="language__progress"><span>60%</span></span>
                 </li>
                 <li class="language__item language__item--cz">
                   <span class="language__name">Czech</span>
-                  <span class="language__progress"><span class="visually-hidden">20%</span></span>
+                  <span class="language__progress"><span>20%</span></span>
                 </li>
               </ul>
             </section>
@@ -231,12 +236,13 @@
             </section>
 
             <div class="back-to-top">
-              <a class="back-to-top__link btn" href="#header">Back to top</a>
+              <a class="back-to-top__link btn" href="#content">Back to top</a>
             </div>
           </div>
         </div>
       </main>
     </div>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 </html>

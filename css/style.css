@@ -141,6 +141,8 @@ pre {
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .page-header {
@@ -195,8 +197,10 @@ pre {
   z-index: 2;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  max-width: 350px;
   margin: 0;
   padding-left: 0;
 }
@@ -230,6 +234,9 @@ pre {
 
 .social__icon,
 .contacts__icon {
+  width: 50px;
+  height: 50px;
+
   transition: fill 0.3s;
 }
 
@@ -444,8 +451,10 @@ pre {
   padding-left: 50px;
 }
 
-.page-main__col:first-child {
-  border-right: 2px solid #191919;
+.page-main__col:last-child {
+  padding-bottom: 45px;
+
+  border-left: 2px solid #191919;
 }
 
 .skills,
@@ -486,69 +495,15 @@ pre {
   width: 50%;
 }
 
-.skills__progress::after,
-.language__progress::after {
-  content: "";
-
+.progress-width {
   display: inline-block;
   height: 12px;
 
+  font-size: 0;
   vertical-align: middle;
 
   background-color: #191919;
   border-radius: 3px;
-}
-
-.skills__item--html .skills__progress::after {
-  width: 90%;
-}
-
-.skills__item--css .skills__progress::after {
-  width: 90%;
-}
-
-.skills__item--js .skills__progress::after {
-  width: 40%;
-}
-
-.skills__item--sass .skills__progress::after {
-  width: 80%;
-}
-
-.skills__item--pug .skills__progress::after {
-  width: 80%;
-}
-
-.skills__item--bem .skills__progress::after {
-  width: 70%;
-}
-
-.skills__item--ps .skills__progress::after {
-  width: 30%;
-}
-
-.skills__item--git .skills__progress::after {
-  width: 40%;
-}
-
-.language__item--en .language__progress::after {
-  width: 40%;
-}
-
-.language__item--ru .language__progress::after {
-  width: 100%;
-}
-
-.language__item--be .language__progress::after {
-  width: 80%;
-}
-
-.language__item--pl .language__progress::after {
-  width: 60%;
-}
-
-.language__item--cz .language__progress::after {
-  width: 20%;
 }
 
 .experience__link {
@@ -558,10 +513,10 @@ pre {
 .back-to-top {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 10px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .container {
     min-width: 768px;
   }
